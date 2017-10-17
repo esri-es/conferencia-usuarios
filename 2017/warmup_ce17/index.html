@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preload" as="image" href="assets/images/fondo_5.png" />
+    <link rel="stylesheet" href="css/reveal.css">
     <style>
         @font-face {
             font-family: "AvenirNext LT Pro Regular";
@@ -78,8 +79,11 @@
           text-decoration: none;
           color: white;
         }
+        .featured {
+          background-color: #000;
+          font-size: 0.5em;
+        }
     </style>
-    <link rel="stylesheet" href="css/reveal.css">
     <script>
         (function() {
 
@@ -242,6 +246,7 @@
   <div class="reveal">
       <div class="slides">
           <section data-background-video="assets/video/science_of_where.webmhd.webm" data-background-video-loop="true">
+            <p class="featured">https://esri-es.github.io/conferencia-usuarios/2017/warmup_ce17/</p>
           </section>
           <section data-background-image="assets/images/fondo_5.png">
               <svg viewBox="0 0 156 80" id="esri-logo">
@@ -391,7 +396,6 @@
           <section data-background-image="assets/images/fondo_1.png" data-transition="zoom-in">
             <h1>Temas a Tratar</h1>
             <ul>
-
               <li class="fragment fade-up"><a href="#/4">Machine Learning & Data Analysis</a></li>
               <li class="fragment fade-up"><a href="#/5">3D & WEBGL</a></li>
               <li class="fragment fade-up"><a href="#/6">Debugging & Tips & Tricks</a></li>
@@ -403,12 +407,30 @@
                 <h1>Machine Learning & Data Analysis<h1>
               </section>
               <section>
-                <h1>Machine Learning : Tipos de Problemas y Casos de Uso</h1>
-                <a class="agenda-link" target="_blank" href="http://ce17.esri.es/ponencia/machine-learning-tipos-problemas-casos-uso/">Ver en la agenda</a>
+                <h1>Ideas principales</h1>
+                <ul>
+                  <li class="fragment fade-up">Es tan importante la calidad del Dato como la representación del mismo</li>
+                  <li class="fragment fade-up">En función del problema, ¿qué técnicas nos pueden ayudar?</li>
+                  <li class="fragment fade-up"></li>
+                </ul>
+              </section>
+              <section>
+                <h1>Recursos</h1>
+                <ul>
+                  <li class="fragment fade-up"><a target="_blank" href="https://www.youtube.com/watch?v=pYbgcDfM2Ts&feature=youtu.be&t=17m59s">Lies, Damn Lies, and Metrics" by André Arko</a></li>
+                  <li class="fragment fade-up"><a target="_blank" href="https://becominghuman.ai/cheat-sheets-for-ai-neural-networks-machine-learning-deep-learning-big-data-678c51b4b463">Mega Chuleta</a></li>
+                  <li class="fragment fade-up"><a target="_blank" href="https://becominghuman.ai/data-science-simplified-principles-and-process-b06304d63308">DataScience simplified: principles & process</a></li>
+                  <li class="fragment fade-up"><a target="_blank" href="http://datavizproject.com/">DataViz Project</a></li>
+                  <li class="fragment fadeup"><a href="https://blogs.esri.com/esri/arcgis/2017/08/31/spatial-analyst-resources/">Recursos de Análisis Espacial</a></li>
+                </ul>
               </section>
               <section>
                 <h1>DataScience Toolbox e integración con ArcGIS</h1>
                 <a class="agenda-link" target="_blank" href="http://ce17.esri.es/ponencia/datascience-toolbox-e-integracion-arcgis/">Ver en la agenda</a>
+              </section>
+              <section>
+                <h1>Machine Learning : Tipos de Problemas y Casos de Uso</h1>
+                <a class="agenda-link" target="_blank" href="http://ce17.esri.es/ponencia/machine-learning-tipos-problemas-casos-uso/">Ver en la agenda</a>
               </section>
           </section>
           <section data-background-image="assets/images/fondo_2.png" data-transition="zoom-in">
@@ -426,17 +448,24 @@
               </ul>
             </section>
             <section>
-              <h1>Conoce I3S y cómo crear elementos 3D para añadirlos a tus escenas</h1>
-              <a class="agenda-link" target="_blank" href="http://ce17.esri.es/ponencia/conoce-i3s-crear-elementos-3d-anadirlos-tus-escenas/">Ver en la agenda</a>
-            </section>
-            <section>
               <h1>WEBGL: Qué es y por qué es importante</h1>
               <a class="agenda-link" target="_blank" href="http://ce17.esri.es/ponencia/webgl-que-es-por-que-es-importante/">Ver en la agenda</a>
+            </section>
+            <section>
+              <h1>Conoce I3S y cómo crear elementos 3D para añadirlos a tus escenas</h1>
+              <a class="agenda-link" target="_blank" href="http://ce17.esri.es/ponencia/conoce-i3s-crear-elementos-3d-anadirlos-tus-escenas/">Ver en la agenda</a>
             </section>
           </section>
           <section data-background-image="assets/images/fondo_2.png" data-transition="zoom-in">
             <section>
               <h1>Debugging & Tips & Tricks</h1>
+            </section>
+            <section>
+              <h1>Ejemplos</h1>
+              <ul>
+                <li><a target="_blank" href="http://bit.ly/2zuydP3">StoryMap personalizado por IDOM</a></li>
+                <li><a target="_blank" href="https://github.com/esri-es/demos/tree/gh-pages/mapjournal">StoryMap personalizado por</a><a target="_blank" href="https://twitter.com/hhkaos">@hhkaos</a></li>
+              </ul>
             </section>
             <section>
               <h1>Desmitificando la personalización de storymaps</h1>
@@ -450,11 +479,23 @@
               <h1>Extender Web AppBuilder y no morir en el intento</h1>
               <a class="agenda-link" target="_blank" href="http://ce17.esri.es/ponencia/extender-web-appbuilder-no-morir-intento/">Ver en la agenda</a>
             </section>
+            <section>
+              <h1>Recursos</h1>
+              <ul>
+                <li><a target="_blank" href="https://github.com/esri-es/arcgis-search">Búsqueda de Recursos ArcGIS</a></li>
+                <li><a target="_blank" href="https://esri-es.github.io/awesome-arcgis/arcgis/products/web-appbuilder/">Awesome ArcGIS (WebAppBuilder)</a></li>
+                <li><a target="_blank" href="https://esri-es.github.io/awesome-arcgis/arcgis/products/configurable-apps/#story-maps">Awesome ArcGIS (StoryMaps)</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/watch?v=XfPMFRnm_Pk">Story Maps: Configuring and Customizing Web Apps</a></li>
+              </ul>
+            </section>
           </section>
           <section data-background-image="assets/images/fondo_3.png" data-transition="zoom-in">
             <h1>¿Esto se puede hacer ya?</h1>
           </section>
-          <section data-background-image="assets/images/fondo_4.png" data-transition="zoom-in">Slide5</section>
+          <section data-background-image="assets/images/fondo_5.png" data-transition="zoom-in">
+            <h1>¡Nos vemos en Breve!</h1>
+            <h1>¡Gracias!</h1>
+          </section>
       </div>
   </div>
   <script src="js/reveal.js"></script>
