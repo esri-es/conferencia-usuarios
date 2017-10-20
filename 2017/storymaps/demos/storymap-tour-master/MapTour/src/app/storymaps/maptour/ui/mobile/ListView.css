@@ -1,0 +1,39 @@
+#listPanel {
+	display:none;
+	z-index: 500;
+	height: 100%;
+	-webkit-overflow-scrolling: touch;
+	-ms-touch-action: none;
+}
+
+.listWrapper {
+	width:100%;
+	height: 100%;
+	overflow:auto;
+	/* SURFACE */
+	-ms-touch-action: none;
+}
+
+.listScroller {
+	padding:0;
+	cursor: pointer;
+	/* header height */
+	padding-bottom:41px;
+}
+
+/* The scroll bar */
+
+
+body.hasTouch .listWrapper > div:nth-child(2) {
+	display: none;
+}
+
+.listWrapper > div:nth-child(2) {
+	z-index: 1 !important;
+}
+
+.listItem {
+	position:relative;
+	height:100px;
+	border-bottom:#444 1px solid;
+}

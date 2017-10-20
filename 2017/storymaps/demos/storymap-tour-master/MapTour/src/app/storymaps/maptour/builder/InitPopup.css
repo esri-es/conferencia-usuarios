@@ -1,0 +1,27 @@
+@media only screen and (max-height : 708px) {
+	#initPopup {
+		top: 50% !important;
+		margin-top: -304px;
+	}
+}
+
+@media only screen and (max-height : 608px) {
+	#initPopup {
+		top: 0px !important;
+		margin-top: 0px;
+	}
+}
+
+#initPopup .modal-footer {
+	min-height: 32px;
+}
+
+#initPopup .modal-body {
+	overflow: visible;
+}
+
+#initPopup .popover {
+	font-size: 14px;
+	font-weight: initial;
+	line-height: initial;
+}

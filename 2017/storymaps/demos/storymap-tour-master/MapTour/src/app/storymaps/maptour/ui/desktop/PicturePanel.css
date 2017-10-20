@@ -1,0 +1,168 @@
+#picturePanel {
+	height:100%;
+	float:left;
+	position:relative;
+	background-color:#B4B4B4;
+}
+
+.modern-layout #picturePanel {
+	position: absolute;
+	right: 4px;
+	width: 400px;
+	height: 400px;
+	background-color: transparent;
+}
+
+/*
+ * 3 panel layout arrows
+ */
+.arrow {
+	cursor:pointer;
+}
+
+#arrowPrev {
+	position:absolute;
+	top:0px;
+	left:8px;
+	z-index:100;
+}
+
+#arrowNext {
+	position:absolute;
+	top:0px;
+	right:8px;
+	z-index:101;
+}
+
+#arrowPrev.disabled, #arrowNext.disabled {
+	cursor: default;
+	display: none;
+}
+
+/*
+ * Modern layout arrows
+ */
+.modern-layout-control {
+	position: absolute;
+	cursor: default;
+	opacity: 0;
+	z-index: 402;
+}
+
+.modern-layout-control.click-btn {
+	width: 32px;
+	height: 53px;
+	background-repeat: no-repeat;
+}
+
+.modern-layout-control.click-btn.left {
+	background: url(../../../../../resources/icons/picturepanel-left2.png);
+}
+
+.modern-layout-control.click-btn.right {
+	background: url(../../../../../resources/icons/picturepanel-right2.png);
+}
+
+.modern-layout-control.click-bg {
+	width: 70px;
+	height: 72px;
+	margin-top: -35px;
+}
+
+.modern-layout-control.click-bg.left {
+	margin-left: -4px;
+}
+
+.modern-layout-control.click-bg.right {
+	margin-right: -4px;
+}
+
+.modern-layout-control.disabled {
+	display: none !important;
+}
+
+.modern-layout-control.hover {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	cursor: pointer;
+}
+
+.modern-layout-control:hover {
+	color: #FFF;
+	text-decoration: none;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+}
+
+body.hasTouch .modern-layout-control:not(.disabled){
+	display: block !important;
+	opacity: 1.0 !important;
+}
+
+#cfader {
+	width:100%;
+	height:100%;
+	position:relative;
+}
+
+.editPictureButtons {
+	display: none;
+	position: absolute;
+	top: 76px;
+	text-align: center;
+	height: 30px;
+}
+
+.editPictureButtons > div {
+	display: inline-block;
+}
+
+.modernBrowserWay, .oldBrowserWay, .attributesWay {
+	display: none;
+}
+
+.editPictureButtons a {
+	font-weight: normal;
+	margin-top: 2px;
+}
+
+.editPictureButtons .oldBrowserWay .btn-upload {
+	vertical-align: -1px;
+}
+
+.editPictureButtons .oldBrowserWay form {
+	display: inline;
+}
+
+.picturePanelPicturePopoverFR{
+	max-width: 315px;
+	width: 315px;
+}
+
+.picturePanelPicturePopoverOLD {
+	max-width: 335px;
+}
+
+.picturePanelThumbnailPopover {
+	width:280px;
+	max-width: 280px;
+}
+
+.edit-attr-popover {
+	max-width: 378px;
+	width: 378px;
+}
+
+.edit-attr-popover input[type="text"] {
+	vertical-align: -2px;
+	margin-bottom: 0px;
+	margin-right: 8px;
+}
+
+.attributesWay .error {
+	display: none;
+	font-weight:bold;
+	font-size:14px;
+	color:#c43d40;
+	margin-top: 4px;
+}

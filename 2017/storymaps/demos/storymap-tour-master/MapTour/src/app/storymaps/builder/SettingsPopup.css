@@ -1,0 +1,42 @@
+#settingsPopup {
+	overflow:hidden;
+}
+
+@media only screen and (max-height : 708px) {
+	#settingsPopup {
+		top: 50%;
+		margin-top: -315px;
+	}
+}
+
+@media only screen and (max-height : 630px) {
+	#settingsPopup {
+		top: 0px;
+		margin-top: 0px;
+	}
+}
+
+#settingsPopup , #settingsPopup .modal-body {
+	max-height: none;
+}
+
+.settingsPopupHeader {
+	width: 100%;
+	margin-top: -3px;
+}
+
+#settingsPopup .tab {
+	width: auto;
+	min-width: inherit;
+	padding: 5px 12px 5px 10px;
+}
+
+#settingsPopup .tab.disabled {
+	opacity: 0.5;
+	cursor: default;
+}
+
+.settingsPopupHeader button {
+	border-radius: 0 !important;
+	width: 34%;
+}
