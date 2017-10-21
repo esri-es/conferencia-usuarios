@@ -24,6 +24,20 @@ Y añadimos en la línea 6:
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
 ```
 
+Añadimos los meta description
+
+```html
+<title>City of Santa Clara: Development Projects | Custom Story Map Tour</title>
+
+<meta name="description" content="This is a customized story map made by @hhkaos for a demo at the developer track during the Esri Spain's User Conference in 2017.">
+
+<!-- Facebook sharing -->
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="City of Santa Clara | Custom Story Map Tour"/>
+<meta property="og:description" content="This is a customized story map made by @hhkaos for a demo at the developer track during the Esri Spain's User Conference in 2017."/>
+<meta property="og:image" content="http://www.arcgis.com/apps/MapTour/resources/icons/hhaos_thug_life.jpg"/>
+```
+
 # CSS
 Copiamos después de la línea 202 del fichero `src/index.html`.
 
