@@ -29,7 +29,7 @@ Añadimos los meta description
 ```html
 <title>City of Santa Clara: Development Projects | Custom Story Map Tour</title>
 
-<meta name="description" content="This is a customized story map made by @hhkaos for a demo at the developer track during the Esri Spain's User Conference in 2017.">
+<meta name="description" content="This is a customized story map made by @hhkaos for a demo at the developer track during the Esri Spain's User Conference 2017.">
 
 <!-- Facebook sharing -->
 <meta property="og:type" content="article"/>
