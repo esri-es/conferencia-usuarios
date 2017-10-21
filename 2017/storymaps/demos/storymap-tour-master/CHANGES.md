@@ -35,7 +35,7 @@ Añadimos los meta description
 <meta property="og:type" content="article"/>
 <meta property="og:title" content="City of Santa Clara | Custom Story Map Tour"/>
 <meta property="og:description" content="This is a customized story map made by @hhkaos for a demo at the developer track during the Esri Spain's User Conference in 2017."/>
-<meta property="og:image" content="http://www.arcgis.com/apps/MapTour/resources/icons/hhaos_thug_life.jpg"/>
+<meta property="og:image" content="http://www.arcgis.com/apps/MapTour/resources/icons/hhkaos_thug_life.jpg"/>
 ```
 
 # CSS
