@@ -1,6 +1,8 @@
-Descargamos [chardinjs.zip](chardinjs.zip) y lo descomprimimos en `src/lib`.
+Descargamos [chardinjs.zip](https://github.com/esri-es/conferencia-usuarios/raw/master/2017/storymaps/demos/storymap-tour-master/chardinjs.zip) y lo descomprimimos en `src/lib`.
 
 # HTML
+En la línea 45 añadimos el appid (por ej: `4f0f875e0668408f8c8f3c3afdc2d8a7`).
+
 Copiamos el nuevo preloader al principio de la línea 390 del fichero `src/index.html`.
 
 ```html
@@ -405,7 +407,8 @@ loadJS('lib/chardinjs/js/chardinjs.min.js');
 "dojo/topic",
 
 // src/app/main-app.js (21)
-"dojo/topic",
+LoadingIndicator,
+topic
 
 // src/app/main-app.js (41)
 /* CUSTOM SCRIPTS */
