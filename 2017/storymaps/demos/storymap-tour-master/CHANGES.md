@@ -1,4 +1,8 @@
+Descargamos [chardinjs.zip](chardinjs.zip) y lo descomprimimos en `src/lib`.
+
 # HTML
+Copiamos el nuevo preloader al principio de la línea 390 del fichero `src/index.html`.
+
 ```html
 <div class="loader">
   <div class="side"></div>
@@ -12,7 +16,15 @@
 </div>
 ```
 
+Y añadimos en la línea 6:
+
+```html
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+```
+
 # CSS
+Copiamos después de la línea 202 del fichero `src/index.html`.
+
 ```css
 body,
 .carouselScroller .carousel-item-div div{
@@ -105,6 +117,9 @@ body,
 }
 
 /* Preloader modification */
+#loadingIndicator{
+  display: none;
+}
 #loadingOverlay{
   background-color: #efecca !important;
   color: #1d1d1d;
@@ -375,18 +390,24 @@ body,
 
 # JS
 ```js
-// src/app/storymaps/maptour/core/Core.js (715) <- añadimos para que oculte el core
-$("#loadingOverlay, #loadingIndicator, #loadingMessage,.loader").fadeOut();
+// src/app/storymaps/core/Core.js (715) <- añadimos para que oculte el core
+$("#loadingOverlay, #loadingIndicator, #loadingMessage, .loader").fadeOut();
 
 // src/app/storymaps/maptour/ui/desktop/Carousel.js (362) //Helper.addCSSRule(".carouselScroller.no-touch .carousel-item-div:not(.selected):hover { background-color: " + hoverColor + " !important; }");
 
-// src/app/storymaps/maptour/ui/desktop/Carousel.css (112)
-background-color: transparent;
+// src/index.html (127)
+loadCSS("lib/chardinjs/css/chardinjs.css");
+
+// src/index.html (1575)
+loadJS('lib/chardinjs/js/chardinjs.min.js');
 
 // src/app/main-app.js (16)
 "dojo/topic",
 
-// src/app/main-app.js (43)
+// src/app/main-app.js (21)
+"dojo/topic",
+
+// src/app/main-app.js (41)
 /* CUSTOM SCRIPTS */
 
 // The application is ready
@@ -404,12 +425,12 @@ topic.subscribe("maptour-point-change-before", function(oldIndex, newIndex){
 topic.subscribe("maptour-point-change-after", function(newIndex){
   console.log("maptour-point-change-after", newIndex, app.data.getCurrentGraphic());
 });
-}
+
 ```
 
-> Al final añadir los atributos HTML
-```HTML
+> Al final añadir los atributos HTML en el fichero `src/index.html`.
 
+```html
 <!-- 597 -->
 <h2 class="subtitle" tabindex="0" data-intro="Leyenda" data-position="bottom" ></h2>
 
