@@ -1,0 +1,64 @@
+.legend {
+	display: none;
+}
+
+.legendContainer {
+	position: absolute;
+	top: 0;
+	right: 5%;
+	width: 200px;
+}
+
+.legendContainer table {
+	border-collapse: initial !important;
+	border-spacing: 2px !important;
+}
+
+.legendContainer .glyphicon-chevron-up,
+.legendContainer .glyphicon-chevron-down {
+	display: none !important;
+}
+
+.legendContainer:not(.collapsed) .glyphicon-chevron-up {
+	display: block !important;
+	vertical-align: -2px !important;
+}
+
+.legendContainer.collapsed .glyphicon-chevron-down {
+	display: block !important;
+	vertical-align: -2px !important;
+}
+
+.legendContainer .collapseBtn {
+	vertical-align: -2px !important;
+}
+
+.legendContainer .content {
+	overflow-y: auto;
+	max-height: 400px;
+	overflow-x: hidden;
+	margin-right: -10px;
+	margin-left: 8px !important;
+}
+
+.legendContainer .content.full-bg {
+	margin: 1px !important;
+	border-radius: 0 0 7px 7px;
+	padding: 5px;
+	background: #fff;
+	color: #333;
+}
+
+.legendContainer .content.settingsOpen {
+	min-height: 55px
+}
+
+.legendContainer,
+.legendContainer .settingsOverlay {
+	-webkit-border-bottom-right-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	-moz-border-radius-bottomright: 8px;
+	-moz-border-radius-bottomleft: 8px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+}

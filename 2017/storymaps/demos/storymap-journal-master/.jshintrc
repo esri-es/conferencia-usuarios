@@ -1,0 +1,35 @@
+{
+	"browser": true,
+	"dojo": true,
+	"jquery": true,
+
+	"globals": {
+		"console": false,
+		"alert": false,
+		"prompt": false,
+
+		"esri": false,
+		"_": false,
+		"unescape": false,
+
+		"commonConfig": true,
+		"i18n": false,
+		"app": true,
+
+		"FB": false,
+		"History": false,
+
+		"CKEDITOR": false,
+		"CKEDITOR_BASEPATH": true
+	},
+
+	"expr": true,
+	"laxbreak": true,
+	"eqnull": true,
+	"multistr": true,
+	"loopfunc": true,
+	"newcap": true,
+	"noarg": true,
+	"undef": true,
+	"unused": true
+}

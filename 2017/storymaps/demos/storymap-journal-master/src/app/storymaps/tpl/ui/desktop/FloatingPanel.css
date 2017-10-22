@@ -1,0 +1,189 @@
+#floatingPanel {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	display: none;
+	min-width: 300px;
+	/*max-width: 550px;*/
+	/*z-index: 30;*/
+	z-index: 1;
+}
+
+#floatingPanel .backdrop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0.8;
+}
+
+.floatingPanel .appTitle {
+	opacity: 0.9;
+}
+
+.floatingPanel .scroll {
+	z-index: 2;
+}
+
+/*
+ * Sections
+ */
+
+.floatingPanel .sections {
+	position: absolute;
+	/*top: 53px;*/
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	width: 100%;
+	padding-right: 34px;
+	overflow: hidden;
+}
+
+.floatingPanel .focus-mainstage {
+	margin: 0 auto;
+}
+
+/*
+ * Navigation dots
+ */
+
+.floatingPanel .navDots {
+	position: absolute;
+	top: 53px;
+	bottom: 0;
+	right: 0;
+	height: 100%;
+	padding-bottom: 53px;
+	background-color: inherit !important;
+}
+
+/*
+ * Right layout
+ */
+
+body.layout-float-left .floatingPanel .sections {
+	padding-left: 34px;
+	padding-right: 0;
+}
+
+body.layout-float-left .floatingPanel .navDots {
+	left: 0;
+	right: inherit;
+}
+
+body.layout-float-left .floatingPanel .appTitle.anchored {
+	padding-left: calc(34px + 2%);
+}
+
+body.layout-float-right .floatingPanel .appTitle.anchored {
+	padding-left: 9%;
+}
+
+/*
+ * Section block
+ */
+
+.floatingPanel .section {
+	position: relative;
+	padding: 0 2% 0 10%;
+	width: 100%;
+	overflow: hidden;
+}
+
+body.layout-float-left .floatingPanel .section {
+	padding: 0 5% 0 2%;
+}
+
+/*
+ * Section content
+ */
+
+/*
+.floatingPanel .section a {
+	color: #EDEDED;
+}
+*/
+
+.floatingPanel .section a[data-storymaps] {
+	/*color: #EDEDED;*/
+	border-bottom: 1px dashed #EDEDED;
+}
+
+.floatingPanel .title {
+	/*font-family: 'open_sanssemibold', sans-serif;*/
+	font-weight: normal;
+	font-size: 1.85em;
+	margin-bottom: calc(10% - 30px);
+}
+
+.floatingPanel .title:focus {
+	outline-width: thin;
+}
+
+body:not(.user-is-tabbing) .floatingPanel .title:focus {
+	outline: none;
+}
+
+.floatingPanel .section:first-child .title {
+	margin-top: 25%;
+	margin-bottom: calc(10% - 30px);
+	font-size: 2.3em;
+	line-height: 1.3em;
+}
+
+.floatingPanel .section:first-child .content {
+	font-size: 20px;
+}
+
+.floatingPanel .content {
+	opacity: 0.8;
+	margin-top: calc(10% - 30px);
+	/*margin-bottom: 15%;*/
+	font-size: 16px;
+	line-height: 1.5em;
+	/*overflow: hidden;*/
+}
+
+.floatingPanel .section img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/*
+ * Builder
+ */
+
+.floatingPanel .builder {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+
+.floatingPanel .panelEditBtn {
+	right: -10px;
+	top: 110px;
+}
+
+body.builder-mode .floatingPanel {
+	top: 55px !important;
+}
+
+/* Display hidden in builder */
+/*body.builder-mode .sidePanel .draft-section,*/
+body.builder-mode .sidePanel .hidden-section {
+	display: block;
+}
+
+/*
+ * Mask
+ */
+
+.floatingPanel .builder-mask {
+	display: none;
+	z-index: 2;
+}

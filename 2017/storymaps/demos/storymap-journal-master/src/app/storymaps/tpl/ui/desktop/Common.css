@@ -1,0 +1,401 @@
+/*
+ * Header
+ */
+
+.header .link,
+.sectionPanel .linkContainer {
+	color: #CECECE;
+}
+
+.header .link {
+	font-weight: 400;
+}
+
+/**********************
+ *  Side/Float panels *
+ **********************/
+
+/*
+ * Header
+ */
+
+.sectionPanel .header {
+	position: relative;
+	height: 55px;
+}
+
+.sectionPanel .header:not(.titleanchored) {
+	/*padding-top: 18px;*/
+}
+
+.sectionPanel .linkSocialContainer {
+	position:absolute;
+	top: 19px;
+	left: 35px;
+	z-index: 2;
+	font-size: 15px;
+}
+
+.sectionPanel .content .link {
+	font-weight: 400;
+	outline: 0;
+}
+
+.sectionPanel .logoContainer {
+	position:absolute;
+	top: 2px;
+	right: 25px;
+}
+
+.sectionPanel .logoWrapper {
+	height:50px;
+	vertical-align: middle;
+}
+
+/*
+.sectionPanel .logoLink {
+	float: right;
+	margin-top: -2px;
+	margin-right: 5px;
+}
+*/
+
+.sectionPanel .logoImg {
+	max-width: 250px;
+	max-height: 50px;
+}
+
+.sectionPanel iframe:not([src]) {
+	border: 1px solid grey;
+}
+
+/*
+ * App title
+ */
+
+.sectionPanel .appTitle {
+	display: block;
+	max-height: 0;
+	text-align: left;
+	margin-top: -6px;
+	padding: 0 35px 4px 35px;
+	transition: max-height .3s;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+.sectionPanel .appTitle * {
+	font-size: 24px !important;
+	font-weight: normal;
+}
+
+.sectionPanel .appTitle.anchored {
+	height: auto;
+	max-height: 100px;
+	visibility: visible;
+}
+
+.sectionPanel .separator {
+	position: relative;
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px solid #CCC;
+}
+
+/*
+ * My Stories
+ */
+
+.sectionPanel .error-status {
+	display: none;
+	position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.sectionPanel .error-status.enabled {
+	display: inline-block;
+}
+
+.sectionPanel .error-status .check-story {
+    margin-top: -2px;
+    margin-right: 10px;
+    display: none;
+}
+
+.sectionPanel .error-status .check-story-close {
+	margin: 0px 3px 0px 5px;
+	cursor: pointer;
+	pointer-events: all;
+}
+
+.sectionPanel .error-status .check-story.btn-success:not(.forceEvent) {
+	pointer-events: none;
+}
+
+.sectionPanel .error-status .share-story {
+	height: 24px;
+    margin-top: -2px;
+}
+
+/*
+ *
+ * Add/Organize
+ *
+ */
+
+/*
+ * Button/label group
+ */
+.builder-content-panel .builder-content-panel-group {
+	display: inline-block;
+}
+
+.builder-content-panel .builder-content-panel-group:hover {
+	cursor: pointer;
+}
+
+/*
+ * Label
+ */
+.builder-content-panel .builder-lbl {
+	font-family: 'open_sanssemibold', sans-serif;
+	font-size: 1.1em;
+	color: #A6A6A6;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+body[data-theme-major=white] .builder-content-panel .builder-content-panel-group:not(.disabled):hover  .builder-lbl,
+body[data-theme-major=white] .builder-content-panel .builder-content-panel-group.active .builder-lbl {
+	color: #000;
+}
+
+body[data-theme-major=black] .builder-content-panel .builder-content-panel-group:not(.disabled):hover  .builder-lbl,
+body[data-theme-major=black] .builder-content-panel .builder-content-panel-group.active .builder-lbl {
+	color: #FFF;
+}
+
+/*
+ * Button
+ */
+.builder-content-panel .builder-btn {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	opacity: 0.8;
+	background-position: 0 30px !important;
+}
+
+.builder-content-panel .builder-content-panel-group:not(.disabled):hover  .builder-btn,
+.builder-content-panel .builder-content-panel-group.active .builder-btn {
+	opacity: 1.0;
+	background-position: 0 30px !important;
+}
+
+/* Large state */
+.builder-content-panel.large .builder-btn {
+	width: 48px;
+	height: 48px;
+	background-size: 48px !important;
+	background-position: 0 0 !important;
+}
+
+.builder-content-panel.large .builder-content-panel-group .builder-btn {
+	background-position: 0 48px !important;
+}
+
+/*
+ * Add
+ */
+.builder-content-panel .builder-add .builder-btn {
+	background: url(../../../../../resources/tpl/builder/icons/builder-add.png);
+	background-size: 30px;
+}
+
+.builder-content-panel .builder-add.disabled .builder-btn {
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+/*
+ * Organize
+ */
+.builder-content-panel .builder-organize {
+	margin-left: 45px;
+}
+
+.builder-content-panel .builder-organize .builder-btn {
+	background: url(../../../../../resources/tpl/builder/icons/builder-organize.png);
+	background-size: 30px;
+}
+
+/*
+ * Edit button
+ */
+
+.panelEditBtn {
+	position: absolute;
+	top: 0;
+	right: 1px;
+	cursor: pointer;
+	margin-top: 13px;
+	z-index: 2;
+	border-radius: 22px;
+}
+
+.panelEditBtnInner {
+	width: 44px;
+	height: 44px;
+	background-image: url(../../../../../resources/tpl/builder/icons/builder-edit-border.png);
+	background-size: 44px;
+	background-position: 0 44px;
+	opacity: 0.8;
+}
+
+.section.active .panelEditBtnInner,
+.panelEditBtn:hover .panelEditBtnInner {
+	opacity: 1.0;
+}
+
+/*
+ * Sharing buttons
+ */
+
+.sectionPanel .social {
+	display: none;
+	text-align: left;
+	margin-top: 10px;
+	margin-left: -10px;
+	margin-bottom: 5px;
+}
+
+.section-social-links .sections .social {
+	display: block;
+}
+
+.sectionPanel .social .shareIcon {
+	margin-left: 10px;
+	font-size: 0.8em;
+	opacity: 0.8;
+}
+
+.sectionPanel .social .shareIcon:hover {
+	color: inherit;
+	opacity: 1.0;
+}
+
+.sectionPanel .section:first-child .social {
+	display: none;
+}
+
+/*
+ * Switch to builder button
+ */
+
+.switchBuilder {
+	display: none;
+	margin-top: -6px;
+	margin-left: 4px;
+	font-weight: bold;
+	padding-right: 6px;
+	height: 24px;
+}
+
+.switchBuilder .glyphicon {
+	margin-right: 4px;
+}
+
+.switchBuilder .switch-builder-close {
+	margin-left: 5px;
+	cursor: pointer;
+	pointer-events: all;
+}
+
+/*
+ * Scroll
+ */
+
+.scroll {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100px;
+	padding: 15px;
+	cursor: pointer;
+}
+
+/* since we moved the scroll button and made it a <button>, fix the styling */
+.sidePanel .scroll,
+.floatingPanel .scroll {
+	z-index: 1;
+	width: 100%;
+	border-style: none;
+}
+
+body.layout-side-left .sidePanel .scroll,
+body.layout-float-left .floatingPanel .scroll {
+	padding-left: 34px;
+}
+
+body.layout-side-right .sidePanel .scroll,
+body.layout-float-right .floatingPanel .scroll {
+	padding-right: 34px;
+}
+
+.scrollInner {
+	width: 100%;
+	height: 52px;
+	background: url('../../../../../resources/tpl/viewer/icons/side-scroll.png');
+	background-repeat: no-repeat;
+	background-position: 50%;
+
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 2.5s;
+	-webkit-animation-timing-function: cubic-bezier(.5, 0, 1, 1);
+	-webkit-animation-iteration-count: infinite;
+
+	-moz-animation-name: blinker;
+	-moz-animation-duration: 2.5s;
+	-moz-animation-timing-function: cubic-bezier(.5, 0, 1, 1);
+	-moz-animation-iteration-count: infinite;
+
+	animation-name: blinker;
+	animation-duration: 2.5s;
+	animation-timing-function: cubic-bezier(.5, 0, 1, 1);
+	animation-iteration-count: infinite;
+}
+
+@-moz-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1.0; }
+}
+
+/*
+ * Autoplay
+ */
+
+#autoplay {
+	display: none;
+    position: absolute;
+    bottom: 10px;
+    z-index: 31;
+}
+
