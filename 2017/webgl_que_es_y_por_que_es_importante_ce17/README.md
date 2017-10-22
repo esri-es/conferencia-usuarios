@@ -5,7 +5,7 @@ Kudos to :
 - [@hakimel](https://github.com/hakimel) for [reveal.js](https://github.com/hakimel/reveal.js/)
 - [@mattdesl](https://github.com/mattdesl) for [svg-mesh-3d](https://github.com/mattdesl)
 - [@mrdoob](https://github.com/mrdoob) for [threejs](https://github.com/mrdoob/three.js)
-- [@unconed](https://github.com/unconed) for [PixelFactory](acko.net/files/gltalks/pixelfactory/online.html)
+- [@unconed](https://github.com/unconed) for [PixelFactory](http://acko.net/files/gltalks/pixelfactory/online.html)
 - [@spacegoo](https://twitter.com/spacegoo) for [webgl academy](http://www.webglacademy.com/)
 - [@greggman](https://github.com/greggman) for [webgl fundamentals](https://github.com/greggman/webgl-fundamentals)
 - [@beauty_pi](https://twitter.com/beauty_pi) for [Shadertoy](https://www.shadertoy.com/)
@@ -22,7 +22,7 @@ I always recommend [nvm](https://github.com/creationix/nvm) , it lets you have s
 
 # Instructions
 
-Install a cli static-server 
+Install a cli static-server
 
 ```bash
 npm i -g http-server
