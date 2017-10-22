@@ -1,0 +1,150 @@
+/*
+ * Bootstrap workaround
+ * Form error feedback
+ * Can't seem to get field feedback to works without that (02/27/14)
+ */
+
+.form-control-feedback {
+	position: absolute;
+    top: 3px;
+    right: 10px;
+    display: none;
+    width: 34px;
+    height: 34px;
+    line-height: 29px;
+    text-align: center;
+}
+
+.form-control-feedback.glyphicon-remove {
+	color: #A94442;
+}
+
+.modal-tabs .tab:nth-child(1) {
+	margin-left: 15px;
+}
+
+/*
+ * Popup views
+ */
+
+#init-import-views {
+	display: none;
+}
+
+/*
+ * Mobile Builder
+ */
+.builderMobile {
+	display: none;
+}
+
+.modal-footer .success {
+	color: #30750a;
+}
+
+.modal-footer .addSpinner {
+	margin-left:8px;
+}
+
+/* Spectrum input color picker */
+.sp-input-container {
+	height: 16px !important;
+}
+
+/*
+ * TODO
+ */
+
+h3 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+textarea {
+	resize: none;
+}
+
+/*
+ * Modal footer
+ */
+
+.modal-footer .error, .modal-footer .success, .modal-footer .addSpinner {
+	display: none;
+	float: left;
+	vertical-align: -4px;
+	margin-top: 6px;
+	font-size: 14px;
+	color: #c43d40;
+	font-weight: bold;
+}
+
+.modal-footer .success {
+	color: #30750a;
+}
+
+.modal-footer .addSpinner {
+	margin-left:8px;
+}
+
+.modal-footer .btn-back {
+	display: none;
+	font-size: 1.3em;
+	margin-top: -3px;
+}
+
+/*
+ * Mask
+ */
+
+body .builder-mask {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #2d2d2d;
+	opacity: 0.6;
+}
+
+body.builder-mask .builder-mask {
+	display: block;
+	z-index: 3;
+}
+
+
+/* SHADOWS FOR UNEXPECTED THEME COLORS */
+
+/* outline for buttons buttons */
+.builder-shadows.media-blues-contrast .landing-btn:not(.disabled),
+.builder-shadows.media-grays-contrast .landing-btn.disabled,
+.builder-shadows.panel-blues-contrast .builder-content-panel .builder-btn,
+.builder-shadows.media-blues-contrast .layout-thumbnail .number-step1.number-1,
+.builder-shadows.panel-blues-contrast .layout-thumbnail .number-step2.number-2 {
+	border-radius: 50%;
+	box-shadow: 0 0 2px 1px white;
+}
+
+/* dark text shadow */
+.builder-shadows.media-blues-contrast.media-dark-bg #mainStagePanel .firstAddExplain .biggerText,
+.builder-shadows.panel-blues-contrast.panel-dark-bg .sectionPanel .firstAddExplain .biggerText,
+.builder-shadows.media-blues-contrast.media-dark-bg .builderLanding .landing-tour-container .landing-lbl {
+	text-shadow: 0 0 10px #333;
+}
+
+/* light text shadow */
+.builder-shadows.media-blues-contrast #mainStagePanel .firstAddExplain .biggerText,
+.builder-shadows.panel-blues-contrast .sectionPanel .firstAddExplain .biggerText,
+.builder-shadows.media-blues-contrast .builderLanding .landing-tour-container .landing-lbl,
+.builder-shadows.media-dark-contrast .landing-add-container .landing-lbl,
+.builder-shadows.media-dark-contrast #builderQuotes,
+.builder-shadows.media-dark-contrast .builderLanding .btnSeparator,
+.builder-shadows.media-dark-contrast #mainStagePanel .firstAddExplain,
+.builder-shadows.panel-dark-contrast .sectionPanel .firstAddExplain {
+	text-shadow: 0 0 10px #fff;
+}
+
+.builder-shadows.panel-dark-bg .builder-content-panel .builder-content-panel-group.active .builder-lbl,
+.builder-shadows.media-dark-contrast .builderLanding .landing-tour-container:hover .landing-lbl {
+	color: #fff;
+}

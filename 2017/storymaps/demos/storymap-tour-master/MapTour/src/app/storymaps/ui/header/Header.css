@@ -1,0 +1,389 @@
+#header {
+	height:115px;
+	background:#444;
+	color:#fff;
+	margin:0;
+	overflow:hidden;
+	display: none;
+}
+
+#header .title {
+	font-family: 'open_sanssemibold', sans-serif;
+}
+
+/*
+ * Desktop
+ */
+
+#header.hideDesktop {
+	height: 0px;
+}
+
+#header.hideDesktop #headerDesktop {
+	display: none;
+}
+
+.textArea {
+	padding-top:0px;
+	padding-left:25px;
+	width:70%;
+}
+
+#headerDesktop .title {
+	height:26px;
+	margin-top: 14px;
+	padding-top: 4px;
+	font-size:20px;
+	font-weight:normal;
+	text-align:left;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+/* In view mode add ellipsis if title is too long */
+#header:not(.isBuilder) #headerDesktop .title {
+	text-overflow: ellipsis;
+	-o-text-overflow:ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+    word-wrap: break-word;
+	white-space: pre;
+}
+
+#headerDesktop .title.titleEmpty .text_edit_label {
+	color: #F00;
+}
+
+#headerDesktop .title.titleEmpty .text_edit_icon {
+	background-color: #F00;
+}
+
+#headerDesktop .subtitle {
+	font-size: 13px;
+	margin-top: 13px;
+	overflow: hidden;
+	overflow-y: auto;
+	font-weight: normal;
+	line-height: 18px;
+    word-wrap: break-word;
+	height: 54px;
+	color: #C5D5D5;
+}
+
+.rightArea {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	padding-top:25px;
+	padding-right:25px;
+	text-align:right;
+}
+
+.rightArea .social {
+	margin-bottom: 6px;
+}
+
+.social .msLink, .social .msLink a {
+	color: #C5D5D5;
+	font-weight:normal;
+	font-size:13px;
+}
+
+.rightArea .logo {
+	position:relative;
+	height: 60px;
+	border:none;
+	outline:none;
+}
+
+/* Firefox don't like this - vertical align on top instead */
+@-moz-document url-prefix() { 
+	.rightArea .logo a {
+		position:relative;
+		display: inline-block;
+	}
+	
+	.rightArea .logo a img {
+		bottom: initial;
+		top: initial;
+		margin-top: -10px;
+	}
+}
+
+.rightArea .logo img {
+	position: absolute;
+	top: 50%;
+	bottom: 50%;
+	right: 0px;
+	max-width: 250px;
+	max-height: 50px;
+	margin: auto 0;
+}
+
+.switchBuilder {
+	display: none;
+	position:absolute; 
+	right: 180px; 
+	top: 30px;
+	width: 145px;
+	padding-left: 35px;
+}
+
+.switchBuilder img {
+	position: absolute;
+	top: 8px;
+	left: 7px;
+	width: 28px;
+	height: 28px;
+}
+
+/*
+ * Social sharing
+ */
+ 
+@font-face {
+  font-family: 'storymaps-icons';
+  src: url('../../../../resources/font/sharing/storymaps-icons.eot?49500659');
+  src: url('../../../../resources/font/sharing/storymaps-icons.eot?49500659#iefix') format('embedded-opentype'),
+       url('../../../../resources/font/sharing/storymaps-icons.woff?49500659') format('woff'),
+       url('../../../../resources/font/sharing/storymaps-icons.ttf?49500659') format('truetype'),
+       url('../../../../resources/font/sharing/storymaps-icons.svg?49500659#storymaps-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'storymaps-icons';
+    src: url('../../../../resources/font/sharing/storymaps-icons.svg?49500659#storymaps-icons') format('svg');
+  }
+}
+*/
+
+
+[class^="icon-"]:before, [class*=" icon-"]:before,
+[class*=" autoplay-icon-"]:before {
+  font-family: "storymaps-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.autoplay-icon-play:before { content: '\e800'; } /* '' */
+.icon-link:before { content: '\e801'; } /* '' */
+.icon-facebook-squared:before { content: '\e802'; } /* '' */
+.icon-twitter:before { content: '\e803'; } /* '' */
+.autoplay-icon-pause:before { content: '\e804'; } /* '' */
+
+.shareIcon {
+	display: inline-block;
+	cursor: pointer;
+	margin-left: 4px;
+	color: #C5D5D5;
+	vertical-align: 0px;
+	background-image: none;
+}
+
+.shareIcon:hover {
+	color: #fff;
+}
+
+.shareIcon.disabled {
+	cursor: default;
+	opacity: 0.5 !important;
+}
+
+.share_bitly {
+	vertical-align: 1px;
+	margin-left: 2px;
+}
+
+.social .popover-title {
+	display: none;
+}
+
+#bitlyInput::-ms-clear {
+	display: none;
+}
+
+/* autoplay */
+
+.autoplay-help + .popover {
+	left: inherit !important;
+}
+
+.autoplay-help + .popover .arrow {
+	display: none;
+}
+
+/*
+ * Desktop builder view
+ */
+
+#headerDesktop .text_edit_input {
+	/* Position on top of the config panel */
+	position: relative;
+	z-index: 501;
+}
+
+/* Reduce the width of the field to be sure that icon will stay visible */
+#headerDesktop .text_edit_label { 
+	max-width: 94%;
+	overflow: hidden;
+}
+
+.title .text_edit_input {
+	height: 20px;
+	margin-top: -6px;
+	margin-bottom: 0px;
+	font-size: 20px;
+	width: 98%;
+}
+
+.title .text_edit_icon {
+	margin-top: -12px;
+	margin-left: 8px;
+}
+
+.subtitle .text_edit_input {
+	font-size: 12px;
+	line-height: 17px;
+	width: 97%;
+}
+
+.subtitle .text_edit_icon {
+	position: absolute;
+	margin-top: -9px;
+	margin-left: 8px;
+}
+
+/*
+ * Mobile
+ */
+
+#headerMobile {
+	display: none;
+	background-color:#444;
+	position:fixed;
+	left: 0px;
+	top: 0px;
+	width:100%;
+	z-index: 100;
+}
+
+#headerMobile .banner {
+	display: none;
+	cursor: pointer;
+}
+
+#headerMobile .title {
+	color:#fff;
+	font-size:22px;
+	padding: 10px 10px 0px 10px;
+	margin-bottom: 10px;
+    word-wrap: break-word;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	max-height: 55px;
+}
+
+#headerMobile .subtitle {
+	color:#dadada;
+	font-size:16px;
+	padding:0 10px 0 10px;
+	font-weight:normal;
+    word-wrap: break-word;
+	max-height: 70px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+#closeHeaderMobile, #openHeaderMobile {
+	text-align:center;
+	color:#fff;
+	font-size:12px;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+#closeHeaderMobile {
+	border-bottom:1px solid #888;
+	padding:10px;
+}
+
+#openHeaderMobile {
+	display: none;
+	position:fixed;
+	right:0;
+	padding:7px;
+	background-color:#666;
+	-webkit-border-radius: 0px 0px 0px 7px;
+	border-radius: 0px 0px 0px 7px;
+	z-index:99;
+}
+
+.navBar {
+	color: #CFCFCF;
+	padding: 9px 0 9px 0;
+	text-align:center;
+	font-weight:normal;
+}
+
+.navBar span {
+	cursor:pointer;
+	-ms-user-select:none;
+}
+
+.rightLink, .leftLink {
+	position:absolute;
+}
+
+.leftLink {
+	left:1em;
+}
+
+.rightLink {
+	right:1em;
+}
+
+.navBar .current {
+	color:#fff;
+	font-weight:bold;
+}
