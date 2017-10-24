@@ -1,0 +1,17 @@
+{
+  "name": "demo-scaffold-3.x",
+  "version": "0.1.0",
+  "dependencies": {
+    "esri": "arcgis-js-api#3.22.0"
+  },
+  "resolutions": {
+    "dojo": "v1.12.2/esri-3.22.0",
+    "dijit": "v1.12.2/esri-3.21.0",
+    "dojox": "v1.12.2/esri-3.21.0",
+    "util": "v1.12.2/esri-3.22.0",
+    "dgrid": "0.3.17/esri-3.20.0",
+    "dstore": "1.1.2",
+    "moment": "2.18.1",
+    "dojo-themes": "1.12.2"
+  }
+}

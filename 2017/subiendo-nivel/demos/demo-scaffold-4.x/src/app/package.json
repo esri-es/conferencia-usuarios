@@ -1,0 +1,8 @@
+{
+  "name": "demo-scaffold-4.x",
+  "version": "1.0.0",
+  "main": "main",
+  "description": "My ArcGIS JS App",
+  "homepage": "",
+  "dojoBuild": "app.profile.js"
+}

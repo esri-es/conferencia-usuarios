@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Workers!</title>
+
+  <style>
+  html,
+  body,
+  #viewDiv {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  </style>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.3/esri/css/main.css">
+
+  <script src="https://js.arcgis.com/4.3/"></script>
+
+  <script>
+  require([
+    "esri/config",
+    "esri/core/promiseUtils",
+    "esri/core/workers/workers",
+    "esri/Map",
+    "esri/views/MapView",
+    "esri/geometry/Polygon",
+    "esri/symbols/SimpleFillSymbol",
+    "esri/symbols/SimpleMarkerSymbol",
+    "esri/geometry/geometryEngine",
+    "esri/geometry/Extent"
+  ], function(
+    esriConfig,
+    promiseUtils, workers,
+    EsriMap, MapView, Polygon, SimpleFillSymbol, SimpleMarkerSymbol,
+    geometryEngine, Extent
+  ) {
+
+    const map = new EsriMap({
+      basemap: "topo"
+    });
+
+    const view = new MapView({
+      container: "viewDiv",
+      map: map,
+      center: [-118.244, 34.052],
+      zoom: 12
+    });
+
+    const fill = new SimpleFillSymbol({
+      outline: {
+        color: [0, 197, 255, 1]
+      },
+      color: [0, 197, 255, 0]
+    })
+
+    const marker = new SimpleMarkerSymbol({
+      outline: {
+        color: [255, 255, 255, 1]
+      },
+      color: [0, 77, 168, 1]
+    });
+
+    view.then(() => {
+      const extent = view.extent.toJSON();
+      const viewCentroid = view.extent.center;
+
+      const area = Polygon.fromExtent(Extent.fromJSON(extent));
+      const centroid = area.centroid;
+      const buffers = [];
+
+      for (let i = 100; i <= 100000; i = i + 100){
+        const ptBuff = geometryEngine.geodesicBuffer(centroid, i, "feet");
+        const data = ptBuff.toJSON();
+        buffers.push(data);
+      }
+
+      const geometries = buffers.map(result => Polygon.fromJSON(result));
+      const graphics = geometries.map(geometry => {
+        return { symbol: fill, geometry };
+      });
+      graphics.push({ symbol: marker, geometry: viewCentroid });
+      view.graphics.addMany(graphics);
+      view.goTo({
+        target: geometries
+      });
+
+    });
+
+  });
+  </script>
+</head>
+
+<body>
+  <div id="viewDiv"></div>
+</body>
+
+</html>
