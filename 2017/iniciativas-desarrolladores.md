@@ -8,7 +8,9 @@
 * Novedades (4)
 * Comunidad (3)
 
-### Recursos de apoyo
+### Charlas, tutoriales y otros recursos sobre ArcGIS
+
+![Charlas, tutoriales y otros recursos sobre ArcGIS](https://i.ytimg.com/vi/HsNzMQRQsQg/hqdefault.jpg)
 
 * [GeoDevelopers.org](http://www.geodevelopers.org/academy) (Webinars): 168 vídeos ~150h ~19 jornadas
 * [Awesome ArcGIS](https://esri-es.github.io/awesome-arcgis/) (Wiki): > 126 páginas, > 500 recursos
@@ -16,12 +18,10 @@
 * [ArcGIS DevLabs](http://desarrolladores.esri.es/upcoming/labs/): (Tutoriales texto): 17 + 3 tutoriales de entre [5-20]min ~3h
 * [MOOC para developers](http://desarrolladores.esri.es/upcoming/moocs/plataforma-arcgis/) (MOOC): `In progress:` 20-30 vídeos [5-10]min ~5h
 
-### Eventos Anuales
+### Fuentes de novedades para desarrolladores ArcGIS
 
 * [Developer Summit](https://github.com/esri-es/devsummits-esri-spain/): Evento anual
 * [Track Developers Confe](http://conferencia.esri.es): Evento anual
-
-###  Otras fuentes de información
 * [Desarrolladores.esri.es](http://desarrolladores.esri.es) (Blog): 61 artículos
 * [Esri Code School](http://desarrolladores.esri.es/code-school/): Newsletter segmentada por interés en un área determinada.
 
