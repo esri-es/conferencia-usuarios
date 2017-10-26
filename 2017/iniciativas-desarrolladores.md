@@ -10,7 +10,7 @@
 
 ### Charlas, tutoriales y otros recursos sobre ArcGIS
 
-![Charlas, tutoriales y otros recursos sobre ArcGIS](https://i.ytimg.com/vi/HsNzMQRQsQg/hqdefault.jpg)
+[![Charlas, tutoriales y otros recursos sobre ArcGIS](https://i.ytimg.com/vi/HsNzMQRQsQg/hqdefault.jpg)](https://www.youtube.com/watch?v=HsNzMQRQsQg&list=PLwq5dz_FjCx6C9-ZtGJGM1eBEjFyndXd6&index=1)
 
 * [GeoDevelopers.org](http://www.geodevelopers.org/academy) (Webinars): 168 vídeos ~150h ~19 jornadas
 * [Awesome ArcGIS](https://esri-es.github.io/awesome-arcgis/) (Wiki): > 126 páginas, > 500 recursos
@@ -18,7 +18,9 @@
 * [ArcGIS DevLabs](http://desarrolladores.esri.es/upcoming/labs/): (Tutoriales texto): 17 + 3 tutoriales de entre [5-20]min ~3h
 * [MOOC para developers](http://desarrolladores.esri.es/upcoming/moocs/plataforma-arcgis/) (MOOC): `In progress:` 20-30 vídeos [5-10]min ~5h
 
-### Fuentes de novedades para desarrolladores ArcGIS
+### Eventos y fuentes de novedades para desarrolladores ArcGIS
+
+[![Fuentes de novedades para desarrolladores ArcGIS](https://i.ytimg.com/vi/5Fu5HUaUltw/hqdefault.jpg)](https://www.youtube.com/watch?v=5Fu5HUaUltw&index=2&list=PLwq5dz_FjCx6C9-ZtGJGM1eBEjFyndXd6)
 
 * [Developer Summit](https://github.com/esri-es/devsummits-esri-spain/): Evento anual
 * [Track Developers Confe](http://conferencia.esri.es): Evento anual
@@ -27,6 +29,7 @@
 
 ### Comunidad
 
+[![Comunidad de desarrolladores ArcGIS](https://i.ytimg.com/vi/IJYMjORLYIo/hqdefault.jpg)](https://www.youtube.com/watch?v=IJYMjORLYIo&index=3&list=PLwq5dz_FjCx6C9-ZtGJGM1eBEjFyndXd6)
 * [Meetup Geo-Developers](https://www.meetup.com/es-ES/Geo-Developers/messages/archive/): Lista de correo (~ 1150 Geo Developers)
 * [GeoDev.Slack.com](https://geodev.slack.com): Mensajería instantánea (~ 110 miembros)
 * [GeoNet GeoDev-Spain](https://geonet.esri.com/groups/geodev-spain): Foro (`En fase de pruebas`)
