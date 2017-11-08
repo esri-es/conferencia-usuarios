@@ -1,4 +1,4 @@
-# Conferencia usuarios 2017
+# Conferencia Usuarios Esri España 2017 - Developer track
 
 Detalles del evento:
 * **Fecha**: Jueves 26 de Octubre 2017
