@@ -1,6 +1,14 @@
 # Conferencia usuarios 2017
 
-## Sesiones para desarrolladores
+Detalles del evento:
+* **Fecha**: Jueves 26 de Octubre 2017
+* **Lugar**: Centro de convenciones Norte, IFEMA
+* **Fotografías**: *no disponibles aún*
+* **Página del evento**: [ce17.esri.es](http://ce17.esri.es/agenda/)
+* **Crónica**:  *no disponibles aún*
+* **Storify**:  *no disponibles aún*
+
+## Materiales
 
 |Sesión|Recursos|Vídeo|
 |---|---|---|
