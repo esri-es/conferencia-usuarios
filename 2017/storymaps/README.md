@@ -5,3 +5,6 @@
 
 # Slides
 [https://slides.com/hhkaos/editing-storymaps/live](https://slides.com/hhkaos/editing-storymaps/live)
+
+# Dudas, ideas, etc.
+Si tienes alguna propuesta, duda no dudes en añadirla a [los issues](https://github.com/esri-es/conferencia-usuarios/issues/1).
