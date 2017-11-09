@@ -3,7 +3,7 @@
 Detalles del evento:
 * **Fecha**: Jueves 26 de Octubre 2017
 * **Lugar**: Centro de convenciones Norte, IFEMA
-* **Fotografías**: [Fotos](https://www.facebook.com/pg/EsriSpain/photos/?tab=album&album_id=1607726182584098)
+* **Fotografías**: [Fotos](https://marcossanchez.smugmug.com/CEsri17/n-V6zCQS/)
 * **Página del evento**: [ce17.esri.es](http://ce17.esri.es/agenda/)
 * **Crónica**:  *no disponibles aún*
 * **Storify**:  *no disponibles aún*
