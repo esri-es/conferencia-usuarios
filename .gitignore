@@ -1,1 +1,4 @@
 -lock.json
+package-lock.json
+.gitignore.swp
+.editorconfig
