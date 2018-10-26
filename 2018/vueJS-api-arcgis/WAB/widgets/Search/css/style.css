@@ -1,0 +1,147 @@
+.jimu-widget-search{
+  min-height: 32px;
+}
+.jimu-widget-search .search-node.default-width-for-openAtStart{
+	width: 300px;
+}
+
+/*.jimu-widget-search .esri-search{
+  width: auto;
+}*/
+
+.jimu-widget-search .result-item-selected{
+	background: #eee;
+}
+
+/*.jimu-widget-search .esri-search .esri-container div:first-child{
+	float: left;
+}
+.jimu-rtl .jimu-widget-search .esri-search .esri-container div:first-child{
+	float: right;
+}
+.jimu-widget-search .esri-search .esri-search-button{
+	padding: 6px;
+}*/
+.jimu-widget-search .esri-search .esri-search-button:hover,
+.jimu-widget-search .esri-search .esri-search-button:focus {
+	background-color: #485566;
+	color: white;
+}
+/*.jimu-widget-search .esri-search .esri-container .esri-input-container .esri-input{
+	width: auto;
+}
+.jimu-rtl .jimu-widget-search .esri-search .esri-container .esri-input-container .esri-input{
+	padding: 6px 12px 6px 24px;
+}
+
+.jimu-widget-search.use-absolute .esri-search .esri-toggle{
+	float: left;
+}
+
+.jimu-rtl .jimu-widget-search.use-absolute .esri-search .esri-toggle{
+	float: right;
+}*/
+
+/*.jimu-widget-search.use-absolute .esri-search .esri-input-container{
+	position: absolute;
+	top: 0;
+	width: auto;
+	left: 34px;
+	right: 34px;
+}*/
+
+/*.jimu-widget-search.use-absolute .esri-search .esri-input-container form{
+	overflow: hidden;
+	z-index: 0;
+	position: relative;
+}
+.jimu-widget-search.use-absolute .esri-search .esri-input-container .esri-clear{
+	z-index: 0;
+}
+
+.jimu-widget-search.use-absolute .esri-search .esri-expand-container{
+	float: none;
+}
+
+.jimu-widget-search.use-absolute .esri-search .esri-submit{
+	float: right;
+}
+
+.jimu-rtl .jimu-widget-search.use-absolute .esri-search .esri-submit{
+	float: left;
+}*/
+
+.jimu-widget-search .esri-search .show-all-results{
+	position: absolute;
+	height: 25px;
+	color: #686868;
+	line-height: 25px;
+	display: none;
+	width: 237px;
+	margin: auto;
+	background-color: #fff;
+	padding: 0 12px;
+	cursor: pointer;
+}
+
+.jimu-widget-search .searchResults .esri-menu{
+	border-radius: 0;
+	color: #686868;
+	font-size: 12px;
+	padding: 0;
+	top: 33px;
+  visibility: visible;
+}
+
+.jimu-widget-search .searchMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #57585A;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  overflow: auto;
+  max-height: 300px;
+}
+
+.jimu-widget-search .searchMenu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.jimu-widget-search .esri-search .esri-menu li.active{
+	background-color: #d9dde0;
+	color: #686868;
+	font-size: 14px;
+}
+
+.jimu-widget-search .esri-search .esri-menu li{
+	padding: 0 12px;
+	line-height: 25px;
+	cursor: pointer;
+}
+
+.jimu-widget-search .esri-search .esri-menu li:hover,
+.jimu-widget-search .esri-search .esri-menu li:focus {
+	background-color: #eee;
+}
+
+.jimu-widget-search .esri-search .esri-menu .menu-header{
+	background-color: #d9dde0;
+	color: #686868;
+	font-size: 14px;
+	min-height: 30px;
+	padding: 0 12px;
+	line-height: 30px;
+}

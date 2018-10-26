@@ -1,0 +1,5 @@
+/**
+ * Copyright @ 2018 Esri.
+ * All rights reserved under the copyright laws of the United States and applicable international laws, treaties, and conventions.
+ */
+define(["esri/core/declare","esri/views/3d/support/PromiseLightweight"],function(e,r){var i=e(r.Promise,{constructor:function(){this.symbol=symbol;for(var e=0,r=!1,i=function(i,s){s&&(this.childGraphics3DSymbols[i]=s,validSymbols++),e--,!this.isRejected()&&r&&e<1&&(validSymbols>0?this.resolve():this.reject())},s=0;s<numSymbolLayers;s++){var t=symbolLayers.getItemAt(s);if(t.enable!==!1){context.layerOrder=layerOrder+(1-(1+s)/numSymbolLayers),context.layerOrderDelta=1/numSymbolLayers;var o=Graphics3DSymbolLayerFactory.make(t,context,t._ignoreDrivers);o&&(e++,this.childGraphics3DSymbolPromises[s]=o,o.then(i.bind(this,s,o),i.bind(this,s,null)))}}context.layerOrder=layerOrder,r=!0,!this.isRejected()&&e<1&&(validSymbols>0?this.resolve():this.reject())},destroy:function(){this.isFulfilled()||this.reject()}});return i});

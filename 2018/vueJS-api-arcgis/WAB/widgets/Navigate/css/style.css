@@ -1,0 +1,31 @@
+.jimu-widget-navigate{
+  background-color: #fff;
+  opacity: 0.8;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.jimu-widget-navigate:hover{
+  opacity: 1;
+}
+
+.jimu-widget-navigate .control-mode{
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+}
+
+.jimu-widget-navigate .control-mode:before{
+  font-family: 'Themefont';
+}
+
+.jimu-widget-navigate .control-mode.pan:before{
+  content: "\a910";
+}
+
+.jimu-widget-navigate .control-mode.rotate:before{
+  content: "\a911";
+}
