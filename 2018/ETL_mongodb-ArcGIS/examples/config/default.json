@@ -1,0 +1,20 @@
+{
+  "mongodb": {
+    "url": "mongodb://localhost:27017",
+    "databasename": "koop",
+    "collectionname": "cameras",
+    "field_id":"carretera",
+    "latitude": "lat",
+    "longitude": "lng",
+    "projectObj":{
+      "lng": 1,
+      "lat": 1,
+      "PK": 1,
+      "alias": 1,
+      "carretera": 1,
+      "codEle": 1,
+      "estado": 1,
+      "sentido": 1
+    }
+  }
+}
