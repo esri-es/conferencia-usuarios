@@ -1,0 +1,24 @@
+.jimu-widget-home{
+  background-color: #fff;
+  opacity: 0.8;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.jimu-widget-home:hover{
+  opacity: 1;
+}
+
+.jimu-widget-home .operate-node{
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+}
+
+.jimu-widget-home .operate-node:before{
+  font-family: 'Themefont';
+  content: "\a908";
+}

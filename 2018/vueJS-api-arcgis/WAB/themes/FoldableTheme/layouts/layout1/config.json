@@ -1,0 +1,24 @@
+{
+  "widgetOnScreen": {
+    "widgets": {
+      "themes/FoldableTheme/widgets/HeaderController/Widget": {
+        "position": {
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "height": 40,
+          "paddingRight": 240,
+          "relativeTo": "browser"
+        }
+      },
+      "widgets/Search/Widget": {
+        "position": {
+          "right": 2,
+          "top": 4,
+          "relativeTo": "browser",
+          "zIndex": 6
+        }
+      }
+    }
+  }
+}

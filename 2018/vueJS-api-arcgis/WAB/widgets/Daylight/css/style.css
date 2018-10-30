@@ -1,0 +1,32 @@
+.jimu-widget-daylight .time-zone{
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.jimu-widget-daylight .sun-time{
+  width: 40%;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  border:1px solid #ccc;
+}
+
+.jimu-rtl .jimu-widget-daylight .sun-time{
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+.jimu-widget-daylight .shadowing-title{
+}
+
+.jimu-widget-daylight .shadow-container{
+  margin-top: 40px;
+}
+
+.jimu-widget-daylight .direct-shadow{
+  margin-top: 5px;
+}
+
+.jimu-widget-daylight .diffuse-shadow{
+  margin-top: 5px;
+}

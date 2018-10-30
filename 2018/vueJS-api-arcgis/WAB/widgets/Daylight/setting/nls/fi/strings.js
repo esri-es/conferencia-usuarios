@@ -1,0 +1,3 @@
+define({
+  "defaultTimeZone": "Määritä oletusaikavyöhyke:"
+});

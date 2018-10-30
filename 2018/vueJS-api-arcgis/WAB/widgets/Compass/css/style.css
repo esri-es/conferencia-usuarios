@@ -1,0 +1,38 @@
+.jimu-widget-compass{
+  width: 32px;
+  height: 32px;
+  opacity: 0.8;
+}
+
+.jimu-widget-compass:hover{
+  opacity: 1;
+}
+
+.jimu-widget-compass .esri-compass.esri-widget-button{
+  width: 30px;
+  height: 30px;
+  /*background-color: transparent;*/
+  border: none;
+  box-shadow: 0 0 1px #000;
+}
+
+.jimu-widget-compass .esri-compass-container{
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.8);
+  box-shadow: none;
+  border: none;
+}
+
+.jimu-widget-compass .esri-compass-container:hover{
+  background-color: #fff;
+}
+
+.jimu-widget-compass .esri-compass-icon{
+  width: 24px;
+  height: 24px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 3px;
+}

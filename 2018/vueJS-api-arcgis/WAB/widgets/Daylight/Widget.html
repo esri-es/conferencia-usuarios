@@ -1,0 +1,22 @@
+﻿<div>
+	<div>${nls.dragSunSliderText}</div>
+	<div data-dojo-type="dijit/form/HorizontalSlider" data-dojo-attach-point="slider" data-dojo-props='intermediateChanges:true,showButtons:false,minimum:0,maximum:23.99' style="margin-top:10px;"></div>
+	<div class="time-zone">
+		<div class="sun-time jimu-float-leading" data-dojo-attach-point="sunTime"></div>
+		<select data-dojo-type="dijit/form/Select" data-dojo-attach-point="zoneSelect" class="jimu-float-trailing" style="width:40%;"></select>
+	</div>
+
+	<input type="text" data-dojo-attach-point="datePicker" constraints={selector:"date",formatLength:"long",fullYear:true} data-dojo-type="dijit/form/DateTextBox" required="true" autoWidth="true" style="margin-top:15px;width: 100%;"/>
+
+	<div class="shadow-container" data-dojo-attach-point="shadowContainer">
+		<div class="shadowing-title">${nls.shadowing}</div>
+
+		<div class="direct-shadow" data-dojo-attach-point="directShadowSection">
+			<div data-dojo-type="jimu/dijit/CheckBox" data-dojo-attach-point="cbxDirect"></div>
+		</div>
+
+		<!-- <div class="diffuse-shadow" data-dojo-attach-point="diffuseShadowSection">
+			<div data-dojo-type="jimu/dijit/CheckBox" data-dojo-attach-point="cbxDiffuse"></div>
+		</div> -->
+	</div>
+</div>

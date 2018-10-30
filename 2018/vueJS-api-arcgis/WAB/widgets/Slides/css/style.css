@@ -1,0 +1,194 @@
+.jimu-widget-slides.expand{
+	position: absolute !important;
+	width: 100% !important;
+	height: 74px !important;
+	left: 0 !important;
+	right: 0 !important;
+	top: auto !important;
+	bottom: 16px !important;
+}
+
+.jimu-widget-slides .slide-icon{
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+	background: #ccc;
+	border-radius: 5px;
+}
+
+.jimu-widget-slides.slides-in-widget-pool .slide-icon{
+	display: none;
+}
+
+.jimu-widget-slides.expand .slide-icon{
+	display: none;
+}
+
+.jimu-widget-slides .slide-icon img{
+	width: 20px;
+	height: 20px;
+}
+
+.jimu-widget-slides .slide-content{
+	display: none;
+	position: relative;
+	width: 100%;
+	height: 74px;
+	/*border: 1px solid #ccc;*/
+	background: rgba(0, 0, 0, 0.6);
+	border-bottom: 0;
+}
+
+.jimu-widget-slides.expand .slide-content{
+	display: block;
+}
+
+.jimu-widget-slides .slide-container{
+	position: absolute;
+	left: 5px;
+	right: 40px;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+}
+
+.jimu-rtl .jimu-widget-slides .slide-container{
+	left: 40px;
+	right: 5px;
+}
+
+.jimu-widget-slides .slide-container > div{
+	position: absolute;
+}
+
+.jimu-widget-slides .arrow-icon{
+	display: none;
+	width: 9px;
+	height: 16px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.jimu-widget-slides.show-arrow-icons .arrow-icon{
+	display: block;
+	top: 50%;
+	margin-top: -8px;
+}
+
+.jimu-widget-slides .arrow-icon.enabled{
+	cursor: pointer;
+}
+
+.jimu-widget-slides .leading-arrow-icon{
+	left: 0px;
+	background-image: url(images/left_normal.png);
+}
+
+.jimu-widget-slides .leading-arrow-icon.enabled:hover{
+	background-image: url(images/left_hover.png);
+}
+
+.jimu-widget-slides .trailing-arrow-icon{
+	right: 10px;
+	background-image: url(images/right_normal.png);
+}
+
+.jimu-widget-slides .trailing-arrow-icon.enabled:hover{
+	background-image: url(images/right_hover.png);
+}
+
+.jimu-widget-slides .slide-bar-div{
+	height: 100%;
+	left: 30px;
+	right: 30px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.jimu-widget-slides .slide-bar-div .slide-bar{
+	display: inline-block;
+	margin: 4px auto 0 auto;
+	height: 65px;
+	white-space: nowrap;
+	padding: 1px 0 0 0;
+	box-sizing: content-box;
+}
+
+.jimu-widget-slides.expand .slide-bar-div .slide-bar{
+	transition: margin-left 0.5s, margin-right 0.5s;
+}
+
+.jimu-widget-slides .slide-bar .slide{
+	display: inline-block;
+	margin: 0 4px;
+}
+
+.jimu-widget-slides .slide-bar .slide-div{
+	position: relative;
+	width: 114px;
+	height: 61px;
+	cursor: pointer;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
+	opacity: 0.9;
+}
+
+.jimu-widget-slides .slide-bar .slide-div:hover{
+	box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.8);
+	background-color: rgba(255, 255, 255, 0.8);
+	opacity: 1;
+	outline: 1px solid #fff;
+}
+
+.jimu-widget-slides .slide-bar .slide-div .thubnail{
+	width: 114px;
+	height: 62px;
+	border-style: none;
+	pointer-events: none;
+}
+
+.jimu-widget-slides .slide-bar .slide-div .small-title{
+	display: none;
+	position: absolute;
+	left: 3px;
+	right: 3px;
+	bottom: 1px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	color: white;
+	text-shadow: 0px 0px 1px black, 0px 0px 2px black, 0px 0px 3px black;
+	font-size: 13px;
+	pointer-events: none;
+}
+
+.jimu-widget-slides .slide-bar .slide-div:hover .small-title{
+	display: block;
+}
+
+.jimu-widget-slides .slide-close{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background: url(images/x.png) center no-repeat;
+	width: 14px;
+	height: 14px;
+	cursor: pointer;
+}
+
+.jimu-rtl .jimu-widget-slides .slide-close{
+	left: 10px;
+	right: auto;
+}
+
+.jimu-widget-slides .jimu-scrollbar{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -16px;
+	height: auto;
+}
+
+/*.slide-widget-expand .esri-attribution{
+	bottom: 74px;
+}*/
